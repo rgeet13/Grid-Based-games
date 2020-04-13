@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement("img");
-      card.setAttribute("src", "images/blank.png");
+      card.setAttribute("src", "/assets/blank.png");
       card.setAttribute("data-id", i);
       card.addEventListener("click", flipCard);
       grid.appendChild(card);
@@ -77,12 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const optionTwoId = cardsChosenId[1];
     if (cardsChosen[0] === cardsChosen[1]) {
       alert("You found a match");
-      cards[optionOneId].setAttribute("src", "images/white.png");
-      cards[optionTwoId].setAttribute("src", "images/white.png");
+      cards[optionOneId].setAttribute("src", "/assets/white.png");
+      cards[optionTwoId].setAttribute("src", "/assets/white.png");
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute("src", "images/blank.png");
-      cards[optionTwoId].setAttribute("src", "images/blank.png");
+      cards[optionOneId].setAttribute("src", "/assets/blank.png");
+      cards[optionTwoId].setAttribute("src", "/assets/blank.png");
       alert("Sorry, try again");
     }
     cardsChosen = [];
