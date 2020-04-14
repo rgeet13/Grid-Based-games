@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+}
 .square {
   width: 200px;
   height: 200px;
@@ -10,8 +23,9 @@
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  width: 618px;
-  height: 618px;
+  width: 600px;
+  height: 600px;
+  margin: 0px auto;
 }
 
 .mole {
